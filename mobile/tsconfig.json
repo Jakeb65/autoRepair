@@ -1,13 +1,21 @@
 {
   "compilerOptions": {
-    "strict": true,
-    "noImplicitAny": true,
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
     "skipLibCheck": true,
-    "jsx": "react-native",
+    "jsx": "react-jsx",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "types": ["jest"]
+    "strict": true,
+    "noImplicitAny": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "types": ["vite/client"]
   },
-  "include": ["src", "Test"],
-  "extends": "expo/tsconfig.base"
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }

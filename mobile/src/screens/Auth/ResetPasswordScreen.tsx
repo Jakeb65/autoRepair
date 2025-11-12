@@ -199,7 +199,7 @@ const ResetPasswordScreen: React.FC = () => {
                   keyboardType="email-address"
                   autoCapitalize="none"
                   value={email}
-                  onChangeText={(text) => {
+                  onChangeText={(text: string) => {
                     setEmail(text);
                     setEmailError(false);
                   }}
@@ -230,7 +230,7 @@ const ResetPasswordScreen: React.FC = () => {
                   placeholderTextColor="#aaa"
                   secureTextEntry
                   value={newPassword}
-                  onChangeText={(text) => {
+                  onChangeText={(text: string) => {
                     setNewPassword(text);
                     setPasswordError(false);
                   }}
@@ -243,7 +243,7 @@ const ResetPasswordScreen: React.FC = () => {
                   placeholderTextColor="#aaa"
                   secureTextEntry
                   value={confirmPassword}
-                  onChangeText={(text) => {
+                  onChangeText={(text: string) => {
                     setConfirmPassword(text);
                     setPasswordError(false);
                   }}

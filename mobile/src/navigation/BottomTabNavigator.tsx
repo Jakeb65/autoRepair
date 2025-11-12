@@ -29,7 +29,7 @@ const BottomTabNavigator = () => {
 
   return (
     <Tab.Navigator
-      screenOptions={({ route }) => ({
+      screenOptions={({ route }: { route: any }) => ({
         headerShown: false,
         tabBarActiveTintColor: isDark ? '#fff' : '#000',
         tabBarStyle: {
@@ -37,7 +37,7 @@ const BottomTabNavigator = () => {
           borderTopWidth: 0.5,
           borderTopColor: isDark ? '#555' : '#ccc',
         },
-        tabBarIcon: ({ color, size }) => getTabBarIcon(route.name, color, size),
+        tabBarIcon: ({ color, size }: { color: string; size: number }) => getTabBarIcon(route.name, color, size),
       })}
     >
       <Tab.Screen name="Home" component={HomeScreen} />

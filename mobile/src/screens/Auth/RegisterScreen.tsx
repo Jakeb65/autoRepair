@@ -271,7 +271,7 @@ const RegisterScreen: React.FC = () => {
                     placeholder="Imię"
                     placeholderTextColor="#aaa"
                     value={imie}
-                    onChangeText={(text) => {
+                    onChangeText={(text: string) => {
                       setImie(text);
                       setErrors(prev => ({ ...prev, imie: false }));
                     }}
@@ -287,7 +287,7 @@ const RegisterScreen: React.FC = () => {
                     placeholder="Nazwisko"
                     placeholderTextColor="#aaa"
                     value={nazwisko}
-                    onChangeText={(text) => {
+                    onChangeText={(text: string) => {
                       setNazwisko(text);
                       setErrors(prev => ({ ...prev, nazwisko: false }));
                     }}
@@ -304,7 +304,7 @@ const RegisterScreen: React.FC = () => {
                     placeholderTextColor="#aaa"
                     keyboardType="phone-pad"
                     value={numerTelefonu}
-                    onChangeText={(text) => {
+                    onChangeText={(text: string) => {
                       setNumerTelefonu(text);
                       setErrors(prev => ({ ...prev, numerTelefonu: false }));
                     }}
@@ -321,7 +321,7 @@ const RegisterScreen: React.FC = () => {
                     placeholderTextColor="#aaa"
                     autoCapitalize="none"
                     value={username}
-                    onChangeText={(text) => {
+                    onChangeText={(text: string) => {
                       setUsername(text);
                       setErrors(prev => ({ ...prev, username: false }));
                     }}
@@ -339,7 +339,7 @@ const RegisterScreen: React.FC = () => {
                     keyboardType="email-address"
                     autoCapitalize="none"
                     value={email}
-                    onChangeText={(text) => {
+                    onChangeText={(text: string) => {
                       setEmail(text);
                       setErrors(prev => ({ ...prev, email: false }));
                     }}
@@ -356,7 +356,7 @@ const RegisterScreen: React.FC = () => {
                     placeholderTextColor="#aaa"
                     secureTextEntry
                     value={password}
-                    onChangeText={(text) => {
+                    onChangeText={(text: string) => {
                       setPassword(text);
                       setErrors(prev => ({ ...prev, password: false }));
                     }}
@@ -373,7 +373,7 @@ const RegisterScreen: React.FC = () => {
                     placeholderTextColor="#aaa"
                     secureTextEntry
                     value={confirmPassword}
-                    onChangeText={(text) => {
+                    onChangeText={(text: string) => {
                       setConfirmPassword(text);
                       setErrors(prev => ({ ...prev, confirmPassword: false }));
                     }}
