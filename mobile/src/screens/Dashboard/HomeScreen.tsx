@@ -35,7 +35,7 @@ const HomeScreen: React.FC = () => {
     <div className="dashboard-container">
       <header className="dashboard-header">
         <h1>🔧 AutoRepair</h1>
-        <button onClick={handleLogout} disabled={loading} className="btn-logout">
+        <button onClick={handleLogout} disabled={loading} className="btn-logout home-logout">
           {loading ? 'Wylogowywanie...' : 'Wyloguj'}
         </button>
       </header>
