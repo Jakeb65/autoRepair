@@ -4,6 +4,9 @@ import LoginScreen from './screens/Auth/LoginScreen'
 import RegisterScreen from './screens/Auth/RegisterScreen.web'
 import ResetPasswordScreen from './screens/Auth/ResetPasswordScreen.web'
 import HomeScreen from './screens/Dashboard/HomeScreen'
+import UserProfileScreen from './screens/Profile/UserProfileScreen'
+import SearchScreen from './screens/Search/SearchScreen'
+import SettingsScreen from './screens/Settings/SettingsScreen'
 import PlaceholderScreen from './screens/PlaceholderScreen'
 
 function App() {
@@ -15,7 +18,7 @@ function App() {
           <Route path="/register" element={<RegisterScreen />} />
           <Route path="/reset-password" element={<ResetPasswordScreen />} />
           <Route path="/home" element={<HomeScreen />} />
-          <Route path="/profile" element={<PlaceholderScreen />} />
+          <Route path="/profile" element={<UserProfileScreen />} />
           <Route path="/edit-profile" element={<PlaceholderScreen />} />
           <Route path="/settings" element={<PlaceholderScreen />} />
           <Route path="/list" element={<PlaceholderScreen />} />
